@@ -1,0 +1,20 @@
+section#s1 {
+  background-color: aquamarine;
+}
+section#s2 {
+  background-color: azure;
+  border: 1px solid palevioletred;
+}
+
+section#s2 li {
+  color: maroon;
+}
+
+.footer-text {
+  letter-spacing: 5px;
+  color: burlywood;
+  text-decoration: dashed;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}

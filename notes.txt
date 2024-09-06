@@ -1,0 +1,30 @@
+How to create a local repository
+1. git init (at the root folder of your app)
+2. git status (current status of our files)
+3. git add . (adds all the files to the repository) OR git add index.html (add specific file to the repository)
+4. after making changes to a file, add it back to the repository (repo) or staging area eg using git add index.
+html
+5. git commit -m "first commit" after adding to the staging area
+6. git branch -M main (specify the branch that would be pushed to the online git repo)
+7. coopy the remote add command from the git hut web page and paste to transfer the local to the online git repo
+then to push to the online repo, u use the command: git push -u origin main
+
+8. Let’s say that you have added files to Git and you do not want it to track any of them.
+In a situation like this you have to tell Git to stop tracking them.
+However, running a simple: 'git rm' command will not only remove it from Git, but will also remove it from your local file system as well! 
+9. To tell Git to stop tracking a file while still keep it in your local system, run the following command:  git rm --cached [file_name]
+10. Once you have staged your files, you can commit them into Git.
+Imagine a commit command as a snapshot at a certain point and time where you can return back to access your repository at that stage. You assign a commit message to every commit, which you can pass with the -m prefix. Thus: git commit -m 'first commit'
+
+11. Git sees every file in your working copy as one of three things: Tracked, untracked and ignored
+12. 
+
+
+Code to push to github
+echo "# my-first-html" >> README.md
+git init
+git add README.md
+git commit -m "first commit"
+git branch -M main
+git remote add origin https://github.com/uwemakpan/my-first-html.git
+git push -u origin main
